@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const CarOption = React.lazy(() => import("@/components/HeaderOptions/CarOption"));
 const VanOption = React.lazy(() => import("@/components/HeaderOptions/VanOption"));
 const LearnerOption = React.lazy(() => import("@/components/HeaderOptions/LearnerOption"));
-const MotorBikeOption=React.lazy(()=>import("@/components/HeaderOptions/MotorBIkeOption"));
+const MotorBikeOption = React.lazy(() => import("@/components/HeaderOptions/MotorBIkeOption"));
 
 const ImpoundOption = React.lazy(() => import("@/components/HeaderOptions/ImpoundOption"));
 const MoreOption = React.lazy(() => import("@/components/HeaderOptions/MoreOption"));
@@ -126,7 +126,7 @@ const Header = () => {
 
                             <div
                                 onMouseEnter={() => setCarOpen(true)}
-                                onMouseLeave={() => setCarOpen(false)}>
+                            >
                                 <button
                                     type="button"
                                     aria-haspopup="true"
@@ -174,14 +174,18 @@ const Header = () => {
                                 </button>
                                 {
                                     carOpen && (
-                                        <CarOption />
+                                        <div
+                                            onMouseLeave={() => setCarOpen(false)}
+                                        >
+                                            <CarOption />
+                                        </div>
                                     )
                                 }
 
 
                             </div>
                             <div onMouseEnter={() => setVanOpen(true)}
-                                onMouseLeave={() => setVanOpen(false)}>
+                            >
                                 <button
                                     type="button"
                                     aria-haspopup="true"
@@ -229,7 +233,12 @@ const Header = () => {
                                 </button>
                                 {
                                     vanOpen && (
-                                        <VanOption />
+                                        <div
+                                            onMouseLeave={() => setVanOpen(false)}
+                                        >
+                                            <VanOption />
+                                        </div>
+
                                     )
                                 }
 

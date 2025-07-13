@@ -3,7 +3,7 @@ const PreBanner = () => {
         <div className="relative">
             <div className="bg-primary !text-white">
                 <div className="xs:py-2 items-center  xs:h-10 mx-auto h-14 overflow-hidden px-4 py-1 text-center">
-                    <div className="flex justify-center gap-2 self-center my-3">
+                    {/* <div className="flex justify-center gap-2 self-center my-3">
                         <div className="tp-widget-trustscore">Excellent</div>
                         <div className="flex gap-1">
                             <div className="flex justify-center items-center bg-[#178733CC] h-3 my-[0.3rem] w-3">
@@ -83,7 +83,7 @@ const PreBanner = () => {
                         </div>
                         <div className="tp-widget-trustscore">43,702 reviews on </div>
                         <div className="tp-widget-trustscore">Trustpilot </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

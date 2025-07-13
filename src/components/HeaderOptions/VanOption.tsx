@@ -71,10 +71,11 @@ const VanOption = () => {
 
                         {/* Van insurance links */}
                         {[
-                            ["One Day Van Insurance", "https://www.tempcover.com/temporary-Van-insurance/one-day"],
-                            ["Monthly Van Insurance", "https://www.tempcover.com/temporary-Van-insurance/one-month"],
-                            ["Weekly Van Insurance", "https://www.tempcover.com/temporary-Van-insurance/weekly"],
-                            ["Hourly Van Insurance", "https://www.tempcover.com/temporary-Van-insurance/hourly"],
+                            ["One Day Van Insurance", "/temporary-van-insurance/one-day"],
+                            ["Monthly Van Insurance", "/temporary-van-insurance/one-month"],
+                            ["Weekly Van Insurance", "/temporary-van-insurance/weekly"],
+                            ["Hourly Van Insurance", "/temporary-van-insurance/hourly-van-insurance"],
+                            ["Temporary Courier Insurance", "/temporary-van-insurance/temporary-courier-insurance"],
                             ["Temporary Business Van Insurance", "https://www.tempcover.com/temporary-business-Van-insurance"],
                         ].map(([label, link], i) => (
                             <a

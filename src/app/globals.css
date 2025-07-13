@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'indivisible', 'indivisible Fallback', Arial, Helvetica, sans-serif;
+  font-family: 'Indivisible', 'Indivisible Fallback', Arial, Helvetica, sans-serif;
   line-height: var(--tw-leading, 1.5);
   color: var(--color-dark, #000);
 }
@@ -167,6 +167,15 @@ li {
   @apply bg-[var(--color-primary)];
 }
 
+.text-dark {
+  color: var(--color-dark);
+}
+
+.font-medium {
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+}
+
 .text-dark-200 {
   @apply text-[var(--color-dark-200)];
 }
@@ -237,9 +246,11 @@ h1 {
   --tw-leading: 1.2;
   --tw-font-weight: var(--font-weight-bold);
   color: var(--color-dark-300);
-  font-family: var(--font-rl-aqva-black), "titleFallback", "titleFallbackFallback", sans-serif;
+  font-family: "purista", "purista Fallback", Arial, Helvetica, sans-serif;
+  ;
+  /* font-family: var(--font-rl-aqva-black), "titleFallback", "titleFallbackFallback", sans-serif; */
   font-size: 43px;
-  font-weight: var(--font-weight-bold);
+  font-weight: 1000 !important;
   line-height: 1.2;
 }
 
@@ -248,7 +259,8 @@ h1 {
   --tw-leading: 1.2;
   --tw-font-weight: var(--font-weight-bold);
   color: var(--color-dark-300);
-  font-family: var(--font-indivisible), "titleFallback", "titleFallbackFallback", sans-serif;
+  font-family: "purista", "purista Fallback", Arial, Helvetica, sans-serif;
+  ;
   font-size: 18px;
   font-weight: var(--font-weight-bold);
   line-height: 1.2;
@@ -292,7 +304,7 @@ h1 {
   margin-bottom: calc(var(--spacing) * 1);
   --tw-font-weight: var(--font-weight-bold);
   display: block;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold) !important;
   padding-left: 2px;
 }
 
@@ -398,11 +410,34 @@ h2 {
   --tw-leading: 1.2;
   --tw-font-weight: var(--font-weight-bold);
   color: var(--color-dark-300);
-  font-family: var(--font-rl-aqva-black), "titleFallback", "titleFallbackFallback", sans-serif;
+  font-family: "purista", "purista Fallback", Arial, Helvetica, sans-serif;
+  ;
+  /* font-family: var(--font-rl-aqva-black), "titleFallback", "titleFallbackFallback", sans-serif; */
+  font-weight: 1000 !important;
   font-size: 34px;
   font-weight: var(--font-weight-bold);
   line-height: 1.2;
   text-wrap: balance;
+}
+
+.tc-heading-sm,
+h4 {
+  font-family: "purista", "purista Fallback", Arial, Helvetica, sans-serif;
+  ;
+  margin-inline: calc(var(--spacing) * 0);
+  --tw-font-weight: var(--font-weight-bold);
+  color: var(--color-dark);
+  font-size: 22px;
+  font-weight: var(--font-weight-bold);
+  margin-block: 1em;
+}
+
+.border-dark-100 {
+  border-color: var(--color-dark-100);
+}
+
+.border-b {
+  border-bottom-style: var(--tw-border-style);
 }
 
 .border-background-400 {
@@ -441,6 +476,10 @@ video {
 
 }
 
+.text-dark {
+  color: var(--color-dark);
+}
+
 .text-dark-400 {
   color: var(--color-dark-400);
 }
@@ -452,8 +491,10 @@ h3 {
   margin-inline: calc(var(--spacing) * 0);
   --tw-leading: 1.4;
   --tw-font-weight: var(--font-weight-medium);
-  color: var(--color-dark-300);
-  font-size: 16px;
+  color: var(--color-dark-400);
+  font-family: "purista", "purista Fallback", Arial, Helvetica, sans-serif;
+  ;
+  /* font-family: var(--font-rl-aqva-black), "titleFallback", "titleFallbackFallback", sans-serif; */
   font-weight: 700 !important;
   line-height: 1.4;
 }
@@ -584,21 +625,78 @@ footer li {
   font-weight: 700;
   transition: background-color .15s ease-out;
 }
+
 .tc-submit-button {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary-400);
-    cursor: pointer;
-    font-family: var(--font-base);
-    width: 100%;
-    --tw-font-weight: var(--font-weight-bold);
-    border-radius: 8px;
-    color: var(--color-background-100);
-    font-size: 18px;
-    font-weight: var(--font-weight-bold);
-    padding-block: 16px;
-    padding-inline: 30px;
-    text-wrap: nowrap;
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  background-color: var(--color-primary);
+  border-color: var(--color-primary-400);
+  cursor: pointer;
+  font-family: var(--font-base);
+  width: 100%;
+  --tw-font-weight: var(--font-weight-bold);
+  border-radius: 8px;
+  color: var(--color-background-100);
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  padding-block: 16px;
+  padding-inline: 30px;
+  text-wrap: nowrap;
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+}
+
+p {
+  word-spacing: 2px;
+}
+
+.css-1sx5d80.builder-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  line-height: normal;
+  height: auto;
+}
+
+.builder-block {
+  padding: calc(var(--spacing) * 0) !important;
+}
+
+.bg-background-200 {
+  background-color: var(--color-background-200);
+}
+
+.font-heading,
+.font-title {
+  font-family: var(--font-fontfamily-heading-main), var(--font-fontfamily-heading-fallback);
+}
+
+.font-extrabold {
+  --tw-font-weight: var(--font-weight-extrabold);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.text-5xl {
+  font-size: var(--text-5xl);
+  line-height: var(--tw-leading, var(--text-5xl--line-height));
+}
+
+.font-title {
+  font-family: var(--font-title);
+}
+
+.mb-9 {
+  margin-bottom: calc(var(--spacing) * 9);
+}
+
+.border-gray-300 {
+  border-color: var(--color-gray-300);
 }

@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const CarOption = () => {
@@ -70,20 +70,20 @@ const CarOption = () => {
 
                         {/* Car insurance links */}
                         {[
-                            ["One Day Car Insurance", "https://www.tempcover.com/temporary-car-insurance/one-day"],
+                            ["One Day Car Insurance", "/temporary-car-insurance/one-day"],
                             ["Monthly Car Insurance", "https://www.tempcover.com/temporary-car-insurance/one-month"],
                             ["Weekly Car Insurance", "https://www.tempcover.com/temporary-car-insurance/weekly"],
                             ["Hourly Car Insurance", "https://www.tempcover.com/temporary-car-insurance/hourly"],
                             ["Temporary Business Car Insurance", "https://www.tempcover.com/temporary-business-car-insurance"],
                         ].map(([label, link], i) => (
-                            <a
+                            <Link
                                 key={i}
                                 className="hover:text-primary text-dark-200 w-full py-2 font-medium underline-offset-8 hover:font-semibold hover:underline"
                                 href={link}
                                 role="menuitem"
                             >
                                 {label}
-                            </a>
+                            </Link>
                         ))}
                     </div>
 

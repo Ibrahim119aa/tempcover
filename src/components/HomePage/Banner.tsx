@@ -2,9 +2,9 @@ const Banner = () => {
     return (
         <div className="w-full flex group light py-regular">
             <div className="tc-container ">
-                <div className=" mx-auto w-[600px] md:max-w-[800px]">
+                <div className=" mx-auto lg:w-[600px] md:max-w-[800px]">
                     <h1 className="mx-auto !mb-4 text-center md:text-center">Quick &amp; Easy Temporary Vehicle Insurance</h1>
-                    <div className="tc-subheading mt-0 mb-8 text-left md:text-center">Get affordable cover, unbelievably fast</div>
+                    <div className="tc-subheading mt-0 mb-8 text-center lg:text-left ">Get affordable cover, unbelievably fast</div>
                     <div className="shadow-tc flex grow-0 flex-col rounded-[16px]   *:first:mt-0 *:last:mb-0 md:p-6 bg-neutral group-[.dark]:bg-secondary-200 group-[.dark]:text-neutral group-[.dark]:border-secondary-400 border-background-400 h-full md:mx-auto md:max-w-[440px] p-6 my-8">
                         <p className="text-dark-300 mb-4 tracking-[0.12px]">To get started simply enter your reg...</p>
                         <form action="">

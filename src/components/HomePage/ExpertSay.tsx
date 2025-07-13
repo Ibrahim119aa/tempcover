@@ -5,7 +5,7 @@ const ExpertSay = () => {
         <div className="w-full flex light py-regular">
             <div className="tc-container">
                 <div className="md:flex">
-                    <div className="hidden items-center justify-center md:flex md:w-[30%]">
+                    <div className=" items-center justify-center md:flex md:w-[30%]">
                         <div className="mr-10 flex w-full gap-4 md:flex-col md:items-center md:justify-center">
                             <div className="h-16 w-16 overflow-hidden rounded-full md:h-[100px] md:w-[100px]">
                                 <Image
