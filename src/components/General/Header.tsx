@@ -7,7 +7,7 @@ const MotorBikeOption = React.lazy(() => import("@/components/HeaderOptions/Moto
 import Link from "next/link";
 const ImpoundOption = React.lazy(() => import("@/components/HeaderOptions/ImpoundOption"));
 const MoreOption = React.lazy(() => import("@/components/HeaderOptions/MoreOption"));
-import { Menu, X, ChevronRight, Globe, Mail, Newspaper } from "lucide-react"
+import { X, ChevronRight, Globe, Mail, Newspaper } from "lucide-react"
 
 
 const Header = () => {
