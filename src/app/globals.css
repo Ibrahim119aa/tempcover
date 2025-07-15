@@ -170,7 +170,12 @@ li {
 .text-dark {
   color: var(--color-dark);
 }
-
+.bg-background-100 {
+    background-color: var(--color-background-100);
+}
+.border-dark-100 {
+    border-color: var(--color-dark-100);
+}
 .font-medium {
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
